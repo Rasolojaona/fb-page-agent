@@ -1,0 +1,398 @@
+{
+  "eval_set_id": "choix",
+  "name": "Choix des outils",
+  "eval_cases": [
+    {
+      "eval_id": "commentaires_sans_reponse",
+      "conversation": [
+        {
+          "invocation_id": "commentaires_sans_reponse-1",
+          "user_content": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Quels commentaires n'ont pas encore reçu de réponse ?"
+              }
+            ]
+          },
+          "final_response": {
+            "role": "model",
+            "parts": [
+              {
+                "text": "(non évalué : seule la trajectoire compte)"
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "name": "list_page_comments",
+                "args": {}
+              }
+            ],
+            "tool_responses": []
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "fb_page_agent",
+        "user_id": "eval",
+        "state": {}
+      }
+    },
+    {
+      "eval_id": "nombre_de_fans",
+      "conversation": [
+        {
+          "invocation_id": "nombre_de_fans-1",
+          "user_content": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Combien de fans a ma Page ?"
+              }
+            ]
+          },
+          "final_response": {
+            "role": "model",
+            "parts": [
+              {
+                "text": "(non évalué : seule la trajectoire compte)"
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "name": "get_page_fan_count",
+                "args": {}
+              }
+            ],
+            "tool_responses": []
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "fb_page_agent",
+        "user_id": "eval",
+        "state": {}
+      }
+    },
+    {
+      "eval_id": "stats_du_mois",
+      "conversation": [
+        {
+          "invocation_id": "stats_du_mois-1",
+          "user_content": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Comment va ma Page ce mois-ci ?"
+              }
+            ]
+          },
+          "final_response": {
+            "role": "model",
+            "parts": [
+              {
+                "text": "(non évalué : seule la trajectoire compte)"
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "name": "get_page_insights",
+                "args": {}
+              }
+            ],
+            "tool_responses": []
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "fb_page_agent",
+        "user_id": "eval",
+        "state": {}
+      }
+    },
+    {
+      "eval_id": "likes_dernier_post",
+      "conversation": [
+        {
+          "invocation_id": "likes_dernier_post-1",
+          "user_content": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Combien de j'aime a mon dernier post ?"
+              }
+            ]
+          },
+          "final_response": {
+            "role": "model",
+            "parts": [
+              {
+                "text": "(non évalué : seule la trajectoire compte)"
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "name": "get_page_posts",
+                "args": {}
+              },
+              {
+                "name": "get_number_of_likes",
+                "args": {}
+              }
+            ],
+            "tool_responses": []
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "fb_page_agent",
+        "user_id": "eval",
+        "state": {}
+      }
+    },
+    {
+      "eval_id": "messenger_lecture",
+      "conversation": [
+        {
+          "invocation_id": "messenger_lecture-1",
+          "user_content": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Combien de conversations Messenger ai-je en ce moment ?"
+              }
+            ]
+          },
+          "final_response": {
+            "role": "model",
+            "parts": [
+              {
+                "text": "(non évalué : seule la trajectoire compte)"
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "name": "list_conversations",
+                "args": {}
+              }
+            ],
+            "tool_responses": []
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "fb_page_agent",
+        "user_id": "eval",
+        "state": {}
+      }
+    },
+    {
+      "eval_id": "fichiers_media",
+      "conversation": [
+        {
+          "invocation_id": "fichiers_media-1",
+          "user_content": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Quels fichiers puis-je publier ?"
+              }
+            ]
+          },
+          "final_response": {
+            "role": "model",
+            "parts": [
+              {
+                "text": "(non évalué : seule la trajectoire compte)"
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "name": "list_media_files",
+                "args": {}
+              }
+            ],
+            "tool_responses": []
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "fb_page_agent",
+        "user_id": "eval",
+        "state": {}
+      }
+    },
+    {
+      "eval_id": "heure_actuelle",
+      "conversation": [
+        {
+          "invocation_id": "heure_actuelle-1",
+          "user_content": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Quelle heure est-il à Madagascar ?"
+              }
+            ]
+          },
+          "final_response": {
+            "role": "model",
+            "parts": [
+              {
+                "text": "(non évalué : seule la trajectoire compte)"
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "name": "get_current_time",
+                "args": {}
+              }
+            ],
+            "tool_responses": []
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "fb_page_agent",
+        "user_id": "eval",
+        "state": {}
+      }
+    },
+    {
+      "eval_id": "brouillon_par_defaut",
+      "conversation": [
+        {
+          "invocation_id": "brouillon_par_defaut-1",
+          "user_content": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Enregistre un brouillon pour annoncer que la boutique reçoit de nouveaux colliers."
+              }
+            ]
+          },
+          "final_response": {
+            "role": "model",
+            "parts": [
+              {
+                "text": "(non évalué : seule la trajectoire compte)"
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "name": "get_page_info",
+                "args": {}
+              },
+              {
+                "name": "save_draft_post",
+                "args": {}
+              }
+            ],
+            "tool_responses": []
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "fb_page_agent",
+        "user_id": "eval",
+        "state": {}
+      }
+    },
+    {
+      "eval_id": "planifier_image_bon_outil",
+      "conversation": [
+        {
+          "invocation_id": "planifier_image_bon_outil-1",
+          "user_content": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Programme l'image exemple.png avec la légende « Nouveau en boutique » demain à 10h."
+              }
+            ]
+          },
+          "final_response": {
+            "role": "model",
+            "parts": [
+              {
+                "text": "(non évalué : seule la trajectoire compte)"
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "name": "post_image_file",
+                "args": {}
+              }
+            ],
+            "tool_responses": []
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "fb_page_agent",
+        "user_id": "eval",
+        "state": {}
+      }
+    },
+    {
+      "eval_id": "commenter_en_tant_que_page",
+      "conversation": [
+        {
+          "invocation_id": "commenter_en_tant_que_page-1",
+          "user_content": {
+            "role": "user",
+            "parts": [
+              {
+                "text": "Ajoute en tant que Page le commentaire « Merci pour votre confiance » sous le dernier post."
+              }
+            ]
+          },
+          "final_response": {
+            "role": "model",
+            "parts": [
+              {
+                "text": "(non évalué : seule la trajectoire compte)"
+              }
+            ]
+          },
+          "intermediate_data": {
+            "tool_uses": [
+              {
+                "name": "get_page_posts",
+                "args": {}
+              },
+              {
+                "name": "comment_on_post",
+                "args": {}
+              }
+            ],
+            "tool_responses": []
+          }
+        }
+      ],
+      "session_input": {
+        "app_name": "fb_page_agent",
+        "user_id": "eval",
+        "state": {}
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# Secrets : ne jamais publier
+.env
+*.env
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ADK (sessions locales, artefacts)
+.adk/
+
+# Médias : seuls le README et l'exemple sont suivis
+media/*
+!media/.gitkeep
+!media/README.md
+!media/exemple.png
+
+# Rapports d'évaluation (contiennent des données de la Page)
+evals/last_*.txt

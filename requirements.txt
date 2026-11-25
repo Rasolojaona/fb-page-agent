@@ -1,0 +1,6 @@
+# Versions testées (2026-11). mcp<2 : le serveur HagaiHen utilise FastMCP de mcp 1.x.
+google-adk[eval]==2.14.1
+litellm==1.109.1
+mcp==1.30.0
+requests==2.34.2
+python-dotenv==1.2.4
